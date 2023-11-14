@@ -1,0 +1,153 @@
+@font-face {
+    font-family: SignPainterSlant;
+    src: url(../fonts/SignPainterHouseSlant_Regular/SignPainterHouseSlant_Regular.ttf);
+}
+
+
+:root {
+  margin: 0;
+  padding: 0;
+  --brand-orange: #ea4c33;
+  --brand-tan: #f1e3ca;
+  --text-white: #ffffff;
+  --font-sans-serif: "Assistant", sans-serif;
+  --font-serif: "Lora", serif;
+  --font-cursive: "Caveat", cursive;
+  --font-gelica: "gelica", sans-serif 
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: var(--brand-orange);
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.component img {
+    max-width: initial;
+}
+
+.component__img {
+    border: 1px solid #ccc;
+    overflow-x: auto;
+}
+
+.component__code {
+    border: 1px solid #ccc;
+    font-family: var(--font-sans-serif);
+    margin: 0 auto;
+    padding: 10px 0 0 0 ;
+    font-size: 16px;
+    background-color: #f1e3ca;
+}
+
+/* Discount Bar */
+.discount {
+    color: var(--text-white);
+    background: var(--brand-orange);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* font family Ginto */
+    font-size: 14px;
+}
+
+/* Nav */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-list__item {
+    border: 1px solid var(--brand-orange);
+    width: 100%;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Logo Bar */
+.nav-title {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+}
+
+.title-list {
+    display: grid;
+    grid-template-columns: .4fr 5fr .185fr .3fr;
+    grid-template-areas: 
+    "left-icon heading account cart";
+    margin: 15px;
+}
+
+.title-list__search {
+    grid-area: left-icon;
+    grid-row: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.fa-magnifying-glass {
+    font-size: 30px;
+    align-self: center;
+
+}
+
+.fa-user {
+    font-size: 25px;
+    align-self: center;
+}
+
+.site-title {
+    color: var(--brand-orange);
+    margin: 0;
+    grid-area: heading;
+    place-self: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.title-list__icons {
+    grid-row: 2;
+    justify-self: end;
+    align-items: center;
+}
+
+.account {
+    grid-area: account;
+}
+
+.cart {
+    padding: 4px;
+    border: 2.5px solid var(--brand-orange);
+    border-radius: 7px;
+    grid-area: cart;
+    align-self: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: SignPainterSlant;
+    font-size: 18px;
+}
