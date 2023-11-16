@@ -1,241 +1,335 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <link href="main.css" rel="stylesheet" />
-    <link href="css/normalize.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://use.typekit.net/tzc3fwh.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@800&family=Fuggles&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ab21451a32.js" crossorigin="anonymous"></script>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="main.css" rel="stylesheet" />
+        <link href="css/normalize.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://use.typekit.net/tzc3fwh.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@800&family=Fuggles&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ab21451a32.js" crossorigin="anonymous"></script>
 
-    <title>Hardlines Coffee</title>
-</head>
+        <title>Hardlines Components</title>
+    </head>
 
-<body>
-  <!--Discount Bar-->
-  
-  <h3 class="discount">20% Off Your First Subscription Use SAVE20</h3>
+    <body>
+        <h1>Web Components</h1>
+        <h2>Typography Defaults</h2>
+            <p class="gelica">Gelica Font</p>
+            <p class="signpainter">Sign Painter Slant Font</p>
+            <p class="ginto">Ginto Font</p>
 
-  <!--Nav-->
+        <article class="component">
+            <h3 class="component__name">Nav Bar</h3>
+            <div class="component__img">
+                <img
+                    srcset="../hardlines-exercise1/landing/main nav.png 2x"
+                    src="../hardlines-exercise1/landing/main nav.png"
+                    alt="hardlines coffee main nav"
+                >
+            </div>
+            <div class="component__code">
+                <!--Discount Bar-->
+                <h3 class="discount">&#10024 20% Off Your First Subscription Use SAVE20 &#10024</h3>
 
-  <header class="navbar">
-    <ul class="nav-list">
-      <li class="nav-list__item"> <a href="#!">Subscriptions </a></li>
-      <li class="nav-list__item"> <a href="#!">Shop </a></li>
-      <li class="nav-list__item"> <a href="#!">About Us</a></li>
-      <li class="nav-list__item"> <a href="#!">Locations</a></li>
-      <li class="nav-list__item"> <a href="#!">Wholesale</a></li>
-    </ul> 
-    <div class="title-list">
-      <a class="title-list__search" href="#!"></a><i class="fa-solid fa-magnifying-glass" style="color: #ea4c33;"></i></li>
-      <h1 class="site-title">Hard Lines</h1></li>
-      <a class="title-list__icons" href="#!"></a><i class="fa-regular fa-user" style="color: #ea4c33;"></i></li>
-      <a class="cart" href="#!">Cart: 0</a></li>
-    </div>
-    </ul>
-  </header>
+                <!--Nav-->
+                <header class="navbar">
+                    <ul class="nav-list">
+                        <li class="nav-list__item"> <a href="#!">Subscriptions </a></li>
+                        <li class="nav-list__item"> <a href="#!">Shop </a></li>
+                        <li class="nav-list__item"> <a href="#!">About Us</a></li>
+                        <li class="nav-list__item"> <a href="#!">Locations</a></li>
+                        <li class="nav-list__item"> <a href="#!">Wholesale</a></li>
+                    </ul> 
+                        <div class="title-list">
+                            <a class="title-list__search" href="#!"></a><i class="fa-solid fa-magnifying-glass" style="color: #ea4c33;"></i></li>
+                            <h1 class="site-title">Hard Lines</h1></li>
+                            <a class="title-list__icons" href="#!"></a><i class="fa-regular fa-user" style="color: #ea4c33;"></i></li>
+                            <a class="cart" href="#!">Cart: 0</a></li>
+                        </div>
+                    </ul>
+                </header>
+            </div>
+        </article>
 
   <!-- hero -->
-  <section class="hero">
-    <div class="container">
-      <img class="hero-img" src="https://hard-lines.co.uk/cdn/shop/files/Nadolig-Llawen-Banner-1_e4f8eef2-f7ba-4674-982a-b7550f4d1265.jpg?v=1699609920&width=1500" alt="Christmas coffee">
-     <div class="quote-on">
-      <h2 class="hero-quote">Christmas Blend Has Landed!</h2>
-      <p class="hero-quote2">Bigger, bolder, and cheekier than ever.</p>
-      <p class="hero-quote2">The only coffee you need this festive season!</p>
-      <a class="button-hero" href="#!">Christmas Blend</a>
-      <a class="button-hero" href="#!">Gifts & Bundles</a>
-    </div>
-    </div>
-  </section>
-
-
-  <!--Shop Quote Section-->
-
-  <div class="shop-section">
-   <h3 class="quote1">Good Coffee Made Easy!</h3>
-   <h3 class="quote2">Sourcing, roasting & sharing delicious coffee for all.</h3>
-   <a class="button-shopnow" href="!#">Shop Now</a>
-  </div>
-
-  <!--Christmas Gifts section-->
-
-  <section class="best-sellers">
-    <h2 class="title">Christmas Gifts & Bundles</h2>
-      <div class="flat-list">
-          <article class="post">    
-              <li class="post post1">
-                <div class="nav__arrows">
-                  <a class="nav__arrows-left" href="#!"><i class="fa-solid fa-circle-chevron-right fa-rotate-180"></i></a>
+        <article class="component">
+            <h3 class="component__name">Main Hero</h3>
+            <div class="component__img">
+                <img
+                    srcset="../hardlines-exercise1/landing/christmas-hero.png 2x"
+                    src="../hardlines-exercise1/landing/christmas-hero.png"
+                    alt="hardlines coffee main hero"
+                >
+            </div>
+            <div class="component__code">
+  <!-- hero -->
+            <section class="hero">
+                <div class="container">
+                    <img class="hero-img" src="https://hard-lines.co.uk/cdn/shop/files/Nadolig-Llawen-Banner-1_e4f8eef2-f7ba-4674-982a-b7550f4d1265.jpg?v=1699609920&width=1500" alt="Christmas coffee">
+                    <div class="quote-on">
+                        <h2 class="hero-quote">Christmas Blend Has Landed!</h2>
+                        <p class="hero-quote2">Bigger, bolder, and cheekier than ever.</p>
+                        <p class="hero-quote2">The only coffee you need this festive season!</p>
+                        <a class="button-hero" href="#!">Christmas Blend</a>
+                        <a class="button-hero" href="#!">Gifts & Bundles</a>
+                        <div class="cartoonhover">
+                            <img class="cartoon1" src="https://hard-lines.co.uk/cdn/shop/files/HARD-LINES_WINK-2023-_6.gif?v=1684247309&width=1500" alt="HardLines Mascot">
+                        </div>
+                        <!--
+                        <div class="cartoonhover">
+                            <img class="cartoon2" src="https://hard-lines.co.uk/cdn/shop/files/HARD-LINES_WINK-2023-_4-1.png?v=1688393273&width=1070" alt="HardLines Mascot">
+                        </div>
+                        -->
+                    </div>
                 </div>
-                <a href="#!" class="post__blend-item">
-                  <img src="https://hard-lines.co.uk/cdn/shop/files/Hard-Lines-Nadolig-Llawen-2023.png?v=1698066931&width=165" alt="house party blend coffee bag" class="post__blend-image">
-                  <h3 class="post__blend-name">House Party</h3>
-                  <h4 class="post__blend-price">From $12.00</h4>
-                </a>  
-              </li>
-            </article>
-  
-            <article class="post">    
-              <li class="post post2">
-                <a href="#!" class="nav-bar__item">
-                  <img src="https://hard-lines.co.uk/cdn/shop/files/V60-Bundle-Hard_Lines-clear_ba7df5bf-3a65-4f28-a4a2-18f754a4ebcc.png?v=1699630561&width=940" alt="house party blend coffee bag" class="post__blend-image">
-                  <h3 class="post__blend-name">Coffee Club Subscription</h3>
-                  <h4 class="post__blend-price">From $14.00</h4>
-                </a>  
-              </li>
-            </article>
-  
-            <article class="post">    
-              <li class="post post3">
-                <a href="#!" class="nav-bar__item">
-                  <img src="https://hard-lines.co.uk/cdn/shop/files/Tonys-Pouch-Hard-Lines-clear.png?v=1699627894&width=360" alt="house party blend coffee bag" class="post__blend-image">
-                  <h3 class="post__blend-name">Colombia El Carmen</h3>
-                  <h4 class="post__blend-price">From $15.00</h4>
-                </a>  
-              </li>
-            </article>
-  
-            <article class="post">    
-              <li class="post post4">
-                <a href="#!" class="nav-bar__item">
-                  <img src="https://hard-lines.co.uk/cdn/shop/files/Aeropress-Bundle-Hard_Lines-clear.png?v=1699627961&width=360" alt="house party blend coffee bag" class="post__blend-image">
-                  <h3 class="post__blend-name">House Party Pods</h3>
-                  <h4 class="post__blend-price">From $9.00</h4>
-                </a>  
-                <div class="nav__arrows">
-                  <a class="nav__arrows-right" href="#!"><i class="fa-solid fa-circle-chevron-right"></i></a>
+            </section>
+            </div>
+        </article>
+
+
+  <!-- first quote -->
+
+        <article class="component">
+            <h3 class="component__name">Shop Now Quote Section</h3>
+            <div class="component__img">
+                <img
+                    srcset="../hardlines-exercise1/Good-coffe-made-easy.png 2x"
+                    src="../hardlines-exercise1/Good-coffe-made-easy.png"
+                    alt="hardlines coffee main quote shop now"
+                >
+            </div>
+            <div class="component__code">
+  <!-- first quote -->
+                <div class="shop-section">
+                    <h3 class="quote1">Good Coffee Made Easy!</h3>
+                    <h3 class="quote2">Sourcing, roasting & sharing delicious coffee for all.</h3>
+                    <a class="button-shopnow" href="!#">Shop Now</a>
                 </div>
-              </li>
-            </article>
-          </div>
-      </section>
+            </div>
+        </article>
 
-  <!--Best Sellers section-->
 
-  <section class="best-sellers">
-  <h2 class="title">Best Sellers</h2>
+    <!-- Christmas Bundle -->
+
+        <article class="component">
+            <h3 class="component__name">Christmas Bundles Section</h3>
+            <div class="component__img">
+                <img
+                    srcset="../hardlines-exercise1/christmas-bundle/christmas-bundle-sample.png 2x"
+                    src="../hardlines-exercise1/christmas-bundle/christmas-bundle-sample.png"
+                    alt="hardlines coffee main quote shop now"
+                >
+            </div>
+            <div class="component__code">
+  <!-- Christmas Bundle -->
+                <section class="best-sellers">
+                    <h2 class="title">Christmas Gifts & Bundles</h2>
+                    <div class="flat-list">
+                        <article class="post">    
+                            <li class="post post1">
+                                <div class="nav__arrows">
+                                <a class="nav__arrows-left" href="#!"><i class="fa-solid fa-circle-chevron-right fa-rotate-180"></i></a>
+                                </div>
+                                <a href="#!" class="post__blend-item">
+                                <img src="https://hard-lines.co.uk/cdn/shop/files/Hard-Lines-Nadolig-Llawen-2023.png?v=1698066931&width=165" alt="house party blend coffee bag" class="post__blend-image">
+                                <h3 class="post__blend-name">House Party</h3>
+                                <h4 class="post__blend-price">From $12.00</h4>
+                                </a>  
+                            </li>
+                            </article>
+                
+                            <article class="post">    
+                            <li class="post post2">
+                                <a href="#!" class="nav-bar__item">
+                                <img src="https://hard-lines.co.uk/cdn/shop/files/V60-Bundle-Hard_Lines-clear_ba7df5bf-3a65-4f28-a4a2-18f754a4ebcc.png?v=1699630561&width=940" alt="house party blend coffee bag" class="post__blend-image">
+                                <h3 class="post__blend-name">Coffee Club Subscription</h3>
+                                <h4 class="post__blend-price">From $14.00</h4>
+                                </a>  
+                            </li>
+                            </article>
+                
+                            <article class="post">    
+                            <li class="post post3">
+                                <a href="#!" class="nav-bar__item">
+                                <img src="https://hard-lines.co.uk/cdn/shop/files/Tonys-Pouch-Hard-Lines-clear.png?v=1699627894&width=360" alt="house party blend coffee bag" class="post__blend-image">
+                                <h3 class="post__blend-name">Colombia El Carmen</h3>
+                                <h4 class="post__blend-price">From $15.00</h4>
+                                </a>  
+                            </li>
+                            </article>
+                
+                            <article class="post">    
+                            <li class="post post4">
+                                <a href="#!" class="nav-bar__item">
+                                <img src="https://hard-lines.co.uk/cdn/shop/files/Aeropress-Bundle-Hard_Lines-clear.png?v=1699627961&width=360" alt="house party blend coffee bag" class="post__blend-image">
+                                <h3 class="post__blend-name">House Party Pods</h3>
+                                <h4 class="post__blend-price">From $9.00</h4>
+                                </a>  
+                                <div class="nav__arrows">
+                                <a class="nav__arrows-right" href="#!"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                                </div>
+                            </li>
+                            </article>
+                        </div>
+                    </section>
+            </div>
+        </article>
+
+    <!-- Subscription Bundle -->
+
+        <article class="component">
+            <h3 class="component__name">Christmas Bundles Section</h3>
+            <div class="component__img">
+                <img
+                    srcset="../hardlines-exercise1/section2/subscriptions.png 2x"
+                    src="../hardlines-exercise1/section2/subscriptions.png"
+                    alt="hardlines coffee subscriptions"
+                >
+            </div>
+            <div class="component__code">
+
+    <!-- Subscription Bundle -->
+
+            <section class="best-sellers">
+                <h2 class="title">Best Sellers</h2>
+                <div class="flat-list">
+                    <article class="post">    
+                        <li class="post post1">
+                            <div class="nav__arrows">
+                            <a class="nav__arrows-left" href="#!"><i class="fa-solid fa-circle-chevron-right fa-rotate-180"></i></a>
+                            </div>
+                            <a href="#!" class="post__blend-item">
+                            <img src="https://hard-lines.co.uk/cdn/shop/products/Hard-Lines-House-party-2023.png?v=1677170040&width=1946" alt="house party blend coffee bag" class="post__blend-image">
+                            <h3 class="post__blend-name">House Party</h3>
+                            <h4 class="post__blend-price">From $12.00</h4>
+                            </a>  
+                        </li>
+                        </article>
+            
+                        <article class="post">    
+                        <li class="post post2">
+                            <a href="#!" class="nav-bar__item">
+                            <img src="hardlines-images/section2/coffee-bags/Hard-Lines-Bag-Mockup-2023-LARGEGIF.gif" alt="house party blend coffee bag" class="post__blend-image">
+                            <h3 class="post__blend-name">Coffee Club Subscription</h3>
+                            <h4 class="post__blend-price">From $14.00</h4>
+                            </a>  
+                        </li>
+                        </article>
+            
+                        <article class="post">    
+                        <li class="post post3">
+                            <a href="#!" class="nav-bar__item">
+                            <img src="https://hard-lines.co.uk/cdn/shop/files/Hard-Lines-El-Carmen-2023-great-taste.png?v=1694077597&width=1946" alt="house party blend coffee bag" class="post__blend-image">
+                            <h3 class="post__blend-name">Colombia El Carmen</h3>
+                            <h4 class="post__blend-price">From $15.00</h4>
+                            </a>  
+                        </li>
+                        </article>
+            
+                        <article class="post">    
+                        <li class="post post4">
+                            <a href="#!" class="nav-bar__item">
+                            <img src="https://hard-lines.co.uk/cdn/shop/files/Hard_Lines-instant-pods-Great_taste_4b329133-26bc-4725-a2aa-afd62e7487f6.png?v=1696348222&width=1946" alt="house party blend coffee bag" class="post__blend-image">
+                            <h3 class="post__blend-name">House Party Pods</h3>
+                            <h4 class="post__blend-price">From $9.00</h4>
+                            </a>  
+                            <div class="nav__arrows">
+                            <a class="nav__arrows-right" href="#!"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                            </div>
+                        </li>
+                        </article>
+                    </div>
+                </section>
+  <!-- Really Good Coffee banner -->
+                <p class="banner"> Really Good Coffee!          Really Good Coffee!     Really Good Coffee!</p>
+            </div>
+        </article>
+
+            <!-- Shop now hero 2 -->
+
+            <article class="component">
+                <h3 class="component__name">Hero 2 shop now Section</h3>
+                <div class="component__img">
+                    <img
+                        srcset="../hardlines-exercise1/section3/hero2.png 2x"
+                        src="../hardlines-exercise1/section3/hero2.png"
+                        alt="hardlines coffee subscriptions"
+                    >
+                </div>
+                <div class="component__code">
+
+    <!-- Shop now hero 2-->
+                    <section class="hero">
+                        <div class="container">
+                          <img class="hero-img" src="https://hard-lines.co.uk/cdn/shop/files/coffe-cup-1-5.jpg?v=1678276837&width=1500 " alt="Christmas coffee">
+                         <div class="quote-on">
+                          <h2 class="hero-quote2">Carefully sourced coffee, roasted in Wales.</h2>
+                          <a class="button-shopnow__pic" href="#!">Shop Now</a>
+                        </div>
+                        </div>
+                      </section>
+    
+    <!-- Featured in Section -->
+
+            <article class="component">
+                <h3 class="component__name">Featured In Section</h3>
+                <div class="component__img">
+                    <img
+                        srcset="../hardlines-exercise1/section4/featured-in.png 2x"
+                        src="../hardlines-exercise1/section4/featured-in.png"
+                        alt="hardlines coffee subscriptions"
+                    >
+                </div>
+                <div class="component__code">
+  <!--  Featured In  -->
+  <section class="featured">
     <div class="flat-list">
-        <article class="post">    
-            <li class="post post1">
-              <div class="nav__arrows">
-                <a class="nav__arrows-left" href="#!"><i class="fa-solid fa-circle-chevron-right fa-rotate-180"></i></a>
-              </div>
-              <a href="#!" class="post__blend-item">
-                <img src="https://hard-lines.co.uk/cdn/shop/products/Hard-Lines-House-party-2023.png?v=1677170040&width=1946" alt="house party blend coffee bag" class="post__blend-image">
-                <h3 class="post__blend-name">House Party</h3>
-                <h4 class="post__blend-price">From $12.00</h4>
-              </a>  
-            </li>
-          </article>
+      <h2 class="title">Featured in</h2>
 
           <article class="post">    
             <li class="post post2">
-              <a href="#!" class="nav-bar__item">
-                <img src="hardlines-images/section2/coffee-bags/Hard-Lines-Bag-Mockup-2023-LARGEGIF.gif" alt="house party blend coffee bag" class="post__blend-image">
-                <h3 class="post__blend-name">Coffee Club Subscription</h3>
-                <h4 class="post__blend-price">From $14.00</h4>
-              </a>  
+            <div class="nav__arrows">
+                <a class="nav__arrows-left" href="#!"><i class="fa-solid fa-circle-chevron-left"></i></a>
+            </div>
+                <img class="featured-article" src="https://hard-lines.co.uk/cdn/shop/files/mob-brand-hard-lines.png?v=1677147679&width=3840" alt="mob magazine logo">
             </li>
           </article>
 
           <article class="post">    
             <li class="post post3">
-              <a href="#!" class="nav-bar__item">
-                <img src="https://hard-lines.co.uk/cdn/shop/files/Hard-Lines-El-Carmen-2023-great-taste.png?v=1694077597&width=1946" alt="house party blend coffee bag" class="post__blend-image">
-                <h3 class="post__blend-name">Colombia El Carmen</h3>
-                <h4 class="post__blend-price">From $15.00</h4>
-              </a>  
+                <img class="featured-article" src="https://hard-lines.co.uk/cdn/shop/files/FT-brand-hard-lines.png?v=1677148645&width=3840" alt="financial times logo">
             </li>
           </article>
 
           <article class="post">    
             <li class="post post4">
-              <a href="#!" class="nav-bar__item">
-                <img src="https://hard-lines.co.uk/cdn/shop/files/Hard_Lines-instant-pods-Great_taste_4b329133-26bc-4725-a2aa-afd62e7487f6.png?v=1696348222&width=1946" alt="house party blend coffee bag" class="post__blend-image">
-                <h3 class="post__blend-name">House Party Pods</h3>
-                <h4 class="post__blend-price">From $9.00</h4>
-              </a>  
+                <img class="featured-article" src="https://hard-lines.co.uk/cdn/shop/files/Artboard_1_115fe32c-c911-4a85-a9f5-0e4c24efe844.png?v=1684505714&width=3840" alt="courier logo"> 
+            </li>
+          </article>
+
+          <article class="post">    
+            <li class="post post4">
+              <img class="featured-article" src="https://hard-lines.co.uk/cdn/shop/files/GQ_e5305e95-945d-4c60-83be-99d33da88da5.png?v=1676027914&width=375" alt="GQ logo">
               <div class="nav__arrows">
                 <a class="nav__arrows-right" href="#!"><i class="fa-solid fa-circle-chevron-right"></i></a>
               </div>
             </li>
           </article>
-        </div>
-    </section>
 
-<!-- Really Good Coffee banner -->
-    <p class="banner"> Really Good Coffee!</p>
+    <!-- What customers are saying Section -->
 
-<!-- Shop now 2nd hero -->
-
-<section class="hero">
-  <div class="container">
-    <img class="hero-img" src="https://hard-lines.co.uk/cdn/shop/files/coffe-cup-1-5.jpg?v=1678276837&width=1500 " alt="Christmas coffee">
-   <div class="quote-on">
-    <h2 class="hero-quote2">Carefully sourced coffee, roasted in Wales</h2>
-    <a class="button-shopnow__pic" href="#!">Shop Now</a>
-  </div>
-  </div>
-</section>
-
-  <!--  Featured In  -->
-  <section class="featured">
-      <div class="flat-list">
-        <h2 class="title">Featured In</h2>
-
-          <article class="post">    
-              <li class="post post1">
-                <div class="nav__arrows">
-                  <a class="nav__arrows-left" href="#!"><i class="fa-solid fa-circle-chevron-right fa-rotate-180"></i></a>
+              <article class="component">
+                <h3 class="component__name">What customers are saying Section</h3>
+                <div class="component__img">
+                    <img
+                        srcset="../hardlines-exercise1/section4/customers-are-saying.png 2x"
+                        src="../hardlines-exercise1/section4/customers-are-saying.png"
+                        alt="hardlines coffee subscriptions"
+                    >
                 </div>
-                  <img src="https://hard-lines.co.uk/cdn/shop/files/the-Guardian-Logo-Hard-lines.png?v=1677146499&width=3840" alt="The Guardian Logo"> 
-              </li>
-            </article>
-  
-            <article class="post">    
-              <li class="post post2">
-                  <img src="https://hard-lines.co.uk/cdn/shop/files/mob-brand-hard-lines.png?v=1677147679&width=3840" alt="mob magazine logo">
-              </li>
-            </article>
-  
-            <article class="post">    
-              <li class="post post3">
-                  <img src="https://hard-lines.co.uk/cdn/shop/files/FT-brand-hard-lines.png?v=1677148645&width=3840" alt="financial times logo">
-              </li>
-            </article>
-  
-            <article class="post">    
-              <li class="post post4">
-                  <img src="https://hard-lines.co.uk/cdn/shop/files/Artboard_1_115fe32c-c911-4a85-a9f5-0e4c24efe844.png?v=1684505714&width=3840" alt="courier logo"> 
-              </li>
-            </article>
-
-            <article class="post">    
-              <li class="post post4">
-                <img src="https://hard-lines.co.uk/cdn/shop/files/Artboard_1_64344134-e808-44b8-9f55-ab358933985a.png?v=1684505961&width=3840" alt="refinery 29 logo">
-              </li>
-            </article>
-
-            <article class="post">    
-              <li class="post post4">
-                  <img src="https://hard-lines.co.uk/cdn/shop/files/Artboard_1_115fe32c-c911-4a85-a9f5-0e4c24efe844.png?v=1684505714&width=3840" alt="courier logo"> 
-              </li>
-            </article>
-
-            <article class="post">    
-              <li class="post post4">
-                <img src="https://hard-lines.co.uk/cdn/shop/files/GQ_e5305e95-945d-4c60-83be-99d33da88da5.png?v=1676027914&width=375" alt="GQ logo">
-                <div class="nav__arrows">
-                  <a class="nav__arrows-right" href="#!"><i class="fa-solid fa-circle-chevron-right"></i></a>
-                </div>
-              </li>
-            </article>
-
-  </div>
-  </section>
+                <div class="component__code">
   <!--  What customers are saying  -->
   <h3 class="title">What customers are saying...</h3>
   <div class="customer-feedback">
@@ -262,118 +356,10 @@
     <p class="customer-name">Betsan J.</p>
   </div>
 
-  <!--  Coffee club subscriptions  -->
 
-  <div class="center">
-  <img src="https://hard-lines.co.uk/cdn/shop/files/multi-bag-square.jpg?v=1678270812&width=1420" alt="Best Sellers Bags">
-  <h2 class="subtitle">Coffee Club Subscription</h2>
-  <p>If you love coffee and want to try something different every month, then the Coffee Club Subscription is for you.</p>
-  <a class="button-shopnow" href="#!">Shop Now</a>
-
-  <img src="https://hard-lines.co.uk/cdn/shop/files/house-party-2-for-15-3.jpg?v=1679573207&width=1420" alt="House Party Bags">
-  <h2 class="subtitle">House Party Subscription</h2>
-  <p>Make sure you always have a bag of House Party in the cupboard with our simple subscription. Pause or cancel at any time.</p>
-  <a class="button-shopnow" href="#!">Shop Now</a>
-
-  <!--  Join the run club  -->
-
-  <h2 class="title__sans">Join the Run Club!</h2>
-  <p>Join us, every Thursday at 6:30pm from our Cafe in Cardiff for a social easy-paced run around the greenest spaces the city has to offer.</p>
-  <p>The Hard Lines Run Club is a friendly community that offers a welcoming space for runners of all abilities and paces, from seasoned pros to beginners, we're open to all... even dogs!</p>
-  <a class="button-shopnow" href="#!">Find Out More</a>
-  <img src="https://hard-lines.co.uk/cdn/shop/files/130700010032-2_50f32ed2-6a42-4a07-9c07-3226a1cde50b.jpg?v=1696845711&width=1500" alt="House Party Bags">
-
-  <!--  Banner  -->
-
-  <p class="banner">Thursday at 6:30PM In Cardiff!</p>
-
-  <!--  Dine With Us  -->
-
-  <img src="https://hard-lines.co.uk/cdn/shop/files/A-diner-breakfasts-2.jpg?v=1678269625&width=1500" alt="House Party Bags">
-  <h2 class="title-serif">Dine with us!</h2>
-  <p>Book a table and experience the full treatment. You’ll find breakfast, lunch and of course coffee, plus a selection of sweet treats that are all baked on site.</p>
-  <p>Try our breakfast burrito —you won't regret it!</p>
-  <a class="button-shopnow" href="#!">Book A Table</a>
-
-
-  <!--  Newsletter sign up  -->
-  
-  <img src="https://hard-lines.co.uk/cdn/shop/files/HARD-LINES_NEWSLETTER-2023.gif?v=1676029936&width=1500" alt="House Party Bags">
-  <h2 class="title-sans">Really Good Stuff!</h2>
-  <p>10% off your first order!</p>
-  <p>Sign up to our weekly newsletter and get the latest updates, exclusive deals</p>
-  <p>and <em>really really really good stuff!</em></p>
-
-  <form>
-    <label class="input" for="fname">
-    <input class="input" type="text" id="fname" name="fname" placeholder="Email"> Sign Me Up!
-    </label>
-  </form>
 </div>
+</section>
 
-  <!--Footer-->
 
-  <footer class="navbar">
-    <h2 class="site-title__footer">Hard Lines</h2>
-
-    
-    <!-- flex location info -->
-    <div clas="loaction-info">
-      <ul class="location-list">
-        <ul class="location">
-          <li class="location-name">Hard Lines Cafe</li>
-          <li class="location-address">Canton, Cardiff CF5 1GX</li>
-          <div class="date-time">
-            <li>Mon–Fri: 07:30–16:00</li>
-            <li>Saturday: 08:30–16:00</li>
-            <li>Sunday: 09:00–16:00</li>
-          </div>
-        </ul>
-        <ul class="location">
-          <li class="location-name">Hard Lines Roastery</li>
-          <li class="location-address">Gwaelod y Garth, CF15 8LA</li>
-          <div class="date-time">
-            <li>Mon–Thu: Open for collections</li>
-            <li>Friday: Closed</li>
-          </div>
-        </ul>
-        <ul class="location">
-          <li class="location-name">Hard Lines Market</li>
-          <li class="location-address">25 Central Market, CF10 1AU</li>
-          <div class="date-time">
-            <li>Mon–Fri: 09:00–15:00</li>
-            <li>Saturday: 09:30–15:00</li>
-            </div>
-        </ul>
-        <ul class="location">
-          <li class="location-name">Contact Us</li>
-          <div class="contact-info">
-            <li>Interested in a partnership with us? Head over to the wholesale enquiry form</li>
-            <li>For order, general & brand enquiries  Please see contact details</li>
-          </div>
-        </ul>
-    </ul>
-  </div>
-
-    <!-- social medias -->
-    <di clas="social-media">
-      <ul class="social-flat-list">
-        <li class="flat-list__social"><a href="#!"><i class="fa-brands fa-twitter"></i></a></li>
-        <li class="flat-list__social"><a href="#!"><i class="fa-brands fa-facebook"></i></a></li>
-        <li class="flat-list__social" ><a href="#!"><i class="fa-brands fa-instagram"></i></a></li>
-        <li class="flat-list__social"><a href="#!"><i class="fa-brands fa-youtube"></i></a></li>
-    </ul>
-  </di>
-    <div class="copywrite">
-      <p>Hard Lines Coffee is proud to be a fully accredited living wage employer</p>
-      <p>Copyright ©2023 Hard Lines Coffee | Outpost ltd.</p>
-    </div>
-    <ul class="nav-list">
-      <li class="nav-list__item"> <a href="#!">Subscriptions </a></li>
-      <li class="nav-list__item"> <a href="#!">Shop </a></li>
-      <li class="nav-list__item"> <a href="#!">About Us</a></li>
-      <li class="nav-list__item"> <a href="#!">Locations</a></li>
-      <li class="nav-list__item"> <a href="#!">Wholesale</a></li>
-    </ul> 
-    </footer>
+    </body>
 </html>
