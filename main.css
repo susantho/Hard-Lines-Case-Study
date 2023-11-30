@@ -3,6 +3,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: SignPainterSlant;
+  src: url(../fonts/SignPainterHouseSlant_Regular/SignPainterHouseSlant_Regular.ttf);
+}
+
+@font-face {
+  font-family: Ginto;
+  src: url(../fonts/ginto-font-family/ABCGintoNormalVariable-Trial-BF651b7b7af3067.ttf);
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -73,8 +83,8 @@ img {
   text-align: center;
   padding: 5px 0 5px 0;
   margin: 0;
-  font-family: var(--font-serif);
-  font-size: 1.55vw;
+  font-family: var(--font-gelica);
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -88,11 +98,10 @@ img {
 
 .title-list {
   display: grid;
-  grid-template-columns: 1fr 2fr .5fr .5fr;
+  grid-template-columns: .4fr 5fr .185fr .3fr;
   grid-template-areas: 
     "left-icon heading account cart";
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 15px;
 }
 
 .title-list__search {
@@ -100,21 +109,21 @@ img {
   grid-row: 2;
   margin: 0;
   padding: 0;
-  align-items: center;
-  justify-content: center;
+
 }
 
 .site-title {
   color: var(--brand-orange);
   margin: 0;
   grid-area: heading;
-  align-items: center;
   text-transform: uppercase;
+  justify-self: center
 }
 
 .title-list__icons {
   grid-row: 2;
 }
+
 
 .account {
   grid-area: account;
@@ -125,6 +134,27 @@ img {
   border: 2.5px solid var(--brand-orange);
   border-radius: 7px;
   grid-area: cart;
+  align-self: center;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: SignPainterSlant;
+  font-size: 18px;
+}
+
+.cart:hover {
+  color: var(--text-white);
+  background-color: var(--brand-orange);
+}
+
+.fa-magnifying-glass {
+  font-size: 30px;
+  align-self: center;
+
+}
+
+.fa-user {
+  font-size: 25px;
+  align-self: center;
 }
 
 /* Hero Section */
@@ -152,14 +182,21 @@ img {
 }
 
 .hero-quote {
-  font-family: var(--font-serif);
+  font-family: var(--font-gelica);
   font-size: 50px;
   max-width: 400px;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  line-height: .98;
 }
 
 .hero-quote2 {
-  font-family: var(--font-sans-serif);
+  font-family: Ginto;
+  font-size: 16px;
+  line-height: .9;
   font-weight: 100;
+  padding-bottom: 10px;
 }
 
 .button-hero{
