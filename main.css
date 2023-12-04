@@ -19,6 +19,7 @@ html {
   --brand-orange: #ea4c33;
   --brand-tan: #f1e3ca;
   --text-white: #ffffff;
+  --featured-yellow: #ffd272;
   --font-sans-serif: "Assistant", sans-serif;
   --font-serif: "Lora", serif;
   --font-cursive: "Caveat", cursive;
@@ -60,11 +61,13 @@ img {
 
 /* Discount Bar */
 .discount {
-  color: var(--brand-tan);
+  color: var(--text-white);
   background: var(--brand-orange);
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 14px;
+  font-family: Ginto;
 }
 
 /* Nav */
@@ -117,11 +120,15 @@ img {
   margin: 0;
   grid-area: heading;
   text-transform: uppercase;
-  justify-self: center
+  justify-self: center;
+  font-size: 35px;
+
 }
 
 .title-list__icons {
   grid-row: 2;
+  justify-self: end;
+  align-items: center;
 }
 
 
@@ -181,6 +188,13 @@ img {
   position: relative;
 }
 
+.hero-img {
+  height: 665px;
+  width: 1400px;
+  object-fit: none;
+}
+
+
 .hero-quote {
   font-family: var(--font-gelica);
   font-size: 50px;
@@ -191,10 +205,10 @@ img {
   line-height: .98;
 }
 
-.hero-quote2 {
+.hero-subquote {
   font-family: Ginto;
   font-size: 16px;
-  line-height: .9;
+  line-height: 0.3px;
   font-weight: 100;
   padding-bottom: 10px;
 }
@@ -205,6 +219,16 @@ img {
   border-bottom: 2px solid var(--text-white);
   margin: 10px 10px 5px 0;
   letter-spacing: 2px;
+  font-family: Ginto;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.cartoon1 {
+  max-height: 200px;
+  position: absolute;
+  top: 433px;
+  left: -38px;
 }
 
 /* Shop Quote Section */
@@ -215,6 +239,8 @@ img {
   margin: auto;
   padding: 0 1rem;
   margin-bottom: 150px;
+  margin-top: 150px;
+
 }
 
 .quote1 {
@@ -224,7 +250,6 @@ img {
   line-height: .95;
   font-weight: 40;
   font-family: var(--font-gelica);
-  font-style: normal;
   font-weight: 200; 
 }
 
@@ -241,51 +266,65 @@ img {
 .button-shopnow {
   border-bottom: 2px var(--brand-orange) solid;
   letter-spacing: 2px;
+  font-size: 13px;
+  font-family: Ginto;
+  font-weight: 800;
+  letter-spacing: 2.75px;
   text-transform: uppercase;
 }
-/* Best Sellers section */
-.title {
-  font-family: var(--font-serif);
-  color: var(--brand-orange);
-  text-align: center;
-  font-size: 4vw;
-  margin: 3.5vw;
-  font-weight: 300;
+
+  /* Christmas and Best Sellers section */
+  .best-sellers {
+    max-width: 1300px;
 }
 
-.flat-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  height: 100%;
-}
+  .title {
+    font-family: var(--font-gelica);
+    color: var(--brand-orange);
+    text-align: center;
+    font-size: 40px;
+    margin: 3.5vw;
+    font-weight: 300;
+  }
+  
+  .flat-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+  }
+  
+  .flat-list > * {
+    flex: 1;
+  }
+  
+  .post {
+    position: relative;
+  }
 
-.flat-list > * {
-  flex: 1;
-}
-
-.post {
-  position: relative;
-  height: 100%;
-}
+  .post__blend-image {
+    max-height: 400px;
+  }
 
   /* Text under coffe bag */
 .post__blend-name {
-  font-size: 2.25vw;
+  font-size: 28px;
+  font-family: Ginto;
   font-weight: 800;
   margin-bottom: 0;
 }
 
 .post__blend-price {
   text-transform: uppercase;
-  font-size: 1.5vw;
+  font-size: 22px;
   padding: 0;
   margin-top: 10px;
-  font-family: var(--font-sans-serif);
+  font-family: SignPainterSlant;
   font-style: italic;
   letter-spacing: .8px;
+  font-weight: lighter;
 }
 
 /* Image on Hover */
@@ -315,17 +354,22 @@ img {
 
 .banner {
   background-color: var(--brand-orange);
-  color: var(--text-white);
+  color: var(--brand-tan);
   text-transform: uppercase;
   margin-bottom: 0;
+  font-family: SignPainterSlant;
+  font-size: 26px;
+  padding: 10px;
 }
 
 .hero-quote2 {
   color: var(--brand-tan);
-  font-family: var(--font-serif);
+  font-family: var(--font-gelica);
   font-weight: 500;
-  font-size: 50px;
-  max-width: 400px;
+  font-size: 46px;
+  max-width: 600px;
+  line-height: normal;
+  margin-bottom: 20px;
 }
 
 .button-shopnow__pic {
@@ -333,26 +377,111 @@ img {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--brand-tan);
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .hero-img {
-  max-height: 1200px;
+  height: 665px;
+  width: 1400px;
+  object-fit: cover;
 }
 
 /* Featured Section */
 
 .featured {
-  background-color: #fad171;
+  background-color: var(--featured-yellow);
   height: 190px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .featured h2 {
+  align-self: center;
+  padding-left: 0;
+  margin-left: 0;
+  font-family: Gelica;
   font-size: 22px;
+  padding-right: 0;
+  margin-right: 0;
+  color: black;
 }
 
+.featured-article {
+  width: 200px;
+}
+
+.post {
+  align-self: center;
+}
+
+.nav__arrows2 {
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  max-width: 40px;
+}
+
+.nav__arrows-left2 , .nav__arrows-right2 {
+  color: var(--brand-orange);
+  width: 2px;
+}
+
+.nav__arrows-left2 {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__arrows-right2 {
+  font-size: 30px;
+  max-width: 20px;
+}
+
+
 /* What customers are saying section */
+.customer {
+  background-color: #9a4736;
+  margin-top: 0;
+}
+
+.customer-flex {
+  display: flex;
+}
+
+.cust-title {
+  text-align: center;
+  color: var(--text-white);
+  font-family: var(--font-gelica);
+  font-size: 32px;
+  font-weight: 100;
+  padding: 75px 0 50px 0;
+}
+
+.stars {
+font-size: 36px;
+text-align: center;
+}
+
+.customer-feedback {
+  color: var(--text-white);
+  text-align: center;
+  font-size: 32px;
+}
+
+.customer-quote {
+  font-family: Ginto;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.customer-name {
+  font-family: var(--font-gelica);
+  font-size: 22px;
+  margin-top: 0;
+}
 
 .center {
   margin-left: 170px;
@@ -374,6 +503,147 @@ img {
 .center p {
   font-family: var(--font-gelica);
   font-size: 16px;
+}
+
+/* Coffee Club Subscriptions */
+
+.subscription_img {
+  width: 425px;
+  border-radius: 10px;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-family: Ginto;
+  font-weight: 900;
+  width: 300px;
+  text-align: center;
+}
+
+.subscription p {
+  width: 350px;
+  font-size: 13px;
+  font-family: Ginto;
+  font-weight: 100;
+  text-align: center;
+}
+
+.subscription a {
+  text-align: center;
+}
+
+.subscriptions {
+  display: flex;
+}
+
+.subscription {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Run Club */
+.run_club {
+  background-color: var(--featured-yellow);
+  margin: 0;
+}
+
+.run_club_info {
+  list-style: none;
+  font-size: 15px;
+  font-family: var(--font-gelica);
+  color: #513B25;
+  text-align: center;
+  width: 470px;
+  padding-top: 50px;
+}
+
+.run_club_flex {
+  display: flex;
+}
+
+.run_club_img {
+  max-width: 500px;
+  z-index: 10;
+  border-radius: 12%;
+  padding: 100px 0 100px 100px;
+}
+
+.club_title {
+  font-family: Ginto;
+  font-size: 46px;
+  color: #513B25;
+  font-weight: 900;
+}
+
+.button-more {
+  text-transform: uppercase;
+  font-family: Ginto;
+  font-size: 13px;
+  border-bottom: 2px black solid;
+  color: #513B25;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  padding-bottom: 5px;
+}
+
+.banner {
+  margin: 0;
+}
+
+/* Dine with Us */
+.dine-in {
+  border-bottom: 1px lightgray solid;
+}
+.dine-in-flex {
+  display: flex;
+  max-width: 1300px;
+  padding: 200px;
+}
+
+.dine-title {
+  font-family: var(--font-gelica);
+  font-size: 50px;
+  color: var(--brand-orange);
+  font-weight: 300;
+}
+
+.dine-in-img {
+  max-width: 500px;
+  border-radius: 6%;
+}
+
+.dine-in-info {
+  list-style: none;
+  color: var(--brand-orange);
+  font-family: Ginto;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+}
+
+/* Newsletter */
+.newsletter {
+  list-style: none;
+  text-align: center;
+}
+
+.newsletter_img {
+  width: 250px;
+  text-align: center;
+}
+
+.newsletter-title {
+  color: var(--brand-orange);
+  font-size: 46px;
+  font-family: Ginto;
+  font-weight: 800;
+}
+
+.newsletter p {
+  color: var(--brand-orange);
+  font-family: var(--font-gelica);
+  font-size: 16px;
+  font-weight: 100;
 }
 
 .input {
@@ -424,7 +694,7 @@ input[type=text] {
 
 .location-address {
   font-family: var(--font-gelica);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .date-time {
@@ -447,12 +717,14 @@ input[type=text] {
 .social-media {
   max-width: 150px;
   text-align: center;
+  margin-top: 200px;
 }
 
 .social-flat-list {
   display: flex;
   list-style: none;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .flat-list__social {
@@ -466,7 +738,8 @@ input[type=text] {
   font-size: 14px;
   text-align: center;
   color: var(--brand-orange);
-  font-family: var(--font-gelica);
+  font-family: Ginto;
+  font-weight: 100;
 }
 
 
