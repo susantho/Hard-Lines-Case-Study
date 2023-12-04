@@ -156,7 +156,6 @@ img {
 .fa-magnifying-glass {
   font-size: 30px;
   align-self: center;
-
 }
 
 .fa-user {
@@ -169,7 +168,7 @@ img {
 .container {
   margin: 15px;
   position: relative;
-  height: 1200px;
+  height: 700px;
 }
 
 .container img{
@@ -193,7 +192,6 @@ img {
   width: 1400px;
   object-fit: none;
 }
-
 
 .hero-quote {
   font-family: var(--font-gelica);
@@ -239,8 +237,7 @@ img {
   margin: auto;
   padding: 0 1rem;
   margin-bottom: 150px;
-  margin-top: 150px;
-
+  margin-top: 100px;
 }
 
 .quote1 {
@@ -285,6 +282,7 @@ img {
     font-size: 40px;
     margin: 3.5vw;
     font-weight: 300;
+    margin-bottom: 0;
   }
   
   .flat-list {
@@ -381,8 +379,8 @@ img {
   padding-top: 0;
 }
 
-.hero-img {
-  height: 665px;
+.hero-img2 {
+  height: 900px;
   width: 1400px;
   object-fit: cover;
 }
@@ -396,6 +394,7 @@ img {
   align-items: center;
   margin-bottom: 0;
 }
+
 
 .featured h2 {
   align-self: center;
@@ -443,6 +442,7 @@ img {
 /* What customers are saying section */
 .customer {
   background-color: #9a4736;
+  height: 700px;
   margin-top: 0;
 }
 
@@ -457,6 +457,7 @@ img {
   font-size: 32px;
   font-weight: 100;
   padding: 75px 0 50px 0;
+  margin-top: 0;
 }
 
 .stars {
@@ -508,20 +509,20 @@ text-align: center;
 /* Coffee Club Subscriptions */
 
 .subscription_img {
-  width: 425px;
   border-radius: 10px;
+  padding-top: 100px;
+  object-fit: fill;
+  max-width: 400px;
 }
 
 .subtitle {
   font-size: 36px;
   font-family: Ginto;
   font-weight: 900;
-  width: 300px;
   text-align: center;
 }
 
 .subscription p {
-  width: 350px;
   font-size: 13px;
   font-family: Ginto;
   font-weight: 100;
@@ -539,6 +540,8 @@ text-align: center;
 .subscription {
   text-align: center;
   padding: 50px;
+  list-style: none;
+  text-align: center;
 }
 
 /* Run Club */
@@ -555,6 +558,7 @@ text-align: center;
   text-align: center;
   width: 470px;
   padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .run_club_flex {
@@ -564,8 +568,9 @@ text-align: center;
 .run_club_img {
   max-width: 500px;
   z-index: 10;
-  border-radius: 12%;
+  border-radius: 30%;
   padding: 100px 0 100px 100px;
+  object-fit: contain;
 }
 
 .club_title {
@@ -593,11 +598,15 @@ text-align: center;
 /* Dine with Us */
 .dine-in {
   border-bottom: 1px lightgray solid;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .dine-in-flex {
   display: flex;
   max-width: 1300px;
-  padding: 200px;
+  max-height: 700px;
+  padding-top: 125px;
+  margin-bottom: 150px;
 }
 
 .dine-title {
@@ -608,7 +617,7 @@ text-align: center;
 }
 
 .dine-in-img {
-  max-width: 500px;
+  max-height: 550px;
   border-radius: 6%;
 }
 
@@ -619,6 +628,7 @@ text-align: center;
   font-size: 16px;
   font-weight: 100;
   text-align: center;
+  padding-top: 100px;
 }
 
 /* Newsletter */
@@ -628,8 +638,8 @@ text-align: center;
 }
 
 .newsletter_img {
-  width: 250px;
   text-align: center;
+  max-width: 250px;
 }
 
 .newsletter-title {
@@ -638,6 +648,7 @@ text-align: center;
   font-family: Ginto;
   font-weight: 800;
 }
+
 
 .newsletter p {
   color: var(--brand-orange);
